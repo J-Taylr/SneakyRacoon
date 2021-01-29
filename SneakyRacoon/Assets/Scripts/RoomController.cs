@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class RoomController : MonoBehaviour
 {
     public float Max;
-    public float Min;
-    public int Dots;
-    // Start is called before the first frame update
+    public List<GameObject> FoodinRoom = new List<GameObject>();
     [SerializeField] GameObject prefab;
     [SerializeField] BoxCollider2D bc;
 
     Vector2 cubeSize;
     Vector2 cubeCenter;
+
+    public bool roomActive = false;
+
+    
 
     void Awake()
     {
@@ -32,15 +34,23 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Dots = GameObject.FindGameObjectsWithTag("Point").Length;
 
-        if(Dots <= 10)
-        {
-            GameObject go = Instantiate(prefab, GetRandomPosition(), Quaternion.identity);
-        }
-        
+
+        SpawnFood();
+        //CheckActive();
     }
-    private Vector2 GetRandomPosition()
+
+    public void SpawnFood()
+    {
+        if (FoodinRoom.Count < Max)
+        {
+            GameObject go = Instantiate(prefab, RandomSpawnPos(), Quaternion.identity);
+            FoodinRoom.Add(go);
+        }
+    }
+
+
+    private Vector2 RandomSpawnPos()
     {
         // You can also take off half the bounds of the thing you want in the box, so it doesn't extend outside.
         // Right now, the center of the prefab could be right on the extents of the box
@@ -48,14 +58,28 @@ public class Spawner : MonoBehaviour
 
         return cubeCenter + randomPosition;
     }
-    public void OnTriggerExit2D(Collider2D other)
+
+    private void OnTriggerExit2D(Collider2D collision) 
     {
-        Debug.Log("exit");
-        if (other.tag == "Point")
+        if (collision.gameObject.CompareTag("Player")) //when the player exits the room, deactivate it
         {
             
-            Debug.Log("hit");
-            Destroy(other);
+            roomActive = false;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) // when the player enters the room, activate it
+        {
+            print(gameObject.name + "active");
+            roomActive = true;
+        }
+    }
+
+    public bool CheckActive()
+    {
+        return (roomActive);
+    }
+
+
 }
