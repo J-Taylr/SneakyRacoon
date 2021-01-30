@@ -49,13 +49,13 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        CheckRooms();
+        //CheckRooms();
         HungerTimer();
 
         hungerSlider.value = timeRemaining;
     }
 
-    public void CheckRooms()
+   /* public void CheckRooms()
     {
         if (kitchen.CheckActive() == true)
         {
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
             cam.CamToLounge();
         }
 
-    }
+    }*/
 
     public void ResetHunger()
     {

@@ -6,12 +6,6 @@ public class PlayerManager : MonoBehaviour
 {
    
     
-    
-    
-    
-    
-    
-    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         print("collision");
@@ -35,7 +29,6 @@ public class PlayerManager : MonoBehaviour
 
 
 
-
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Hiding")) // if player leaves table
@@ -43,7 +36,6 @@ public class PlayerManager : MonoBehaviour
             Color tablecolor = collision.gameObject.GetComponent<SpriteRenderer>().color;
             tablecolor.a = 1;
             collision.gameObject.GetComponent<SpriteRenderer>().color = tablecolor; // change the alpha back to 100 when the player leaves
-
 
 
             GameManager.Instance.PlayerisHidden = false;
