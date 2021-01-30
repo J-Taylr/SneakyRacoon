@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
        
     }
 
-    //start script here//start script here//start script here//start script here//
-    
+    //start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//st
+
 
     public int playerScore = 0;
      public enum Room {KITCHEN,LOUNGE,BEDROOM,TOILET}
@@ -33,12 +33,11 @@ public class GameManager : MonoBehaviour
     public RoomController kitchen;
     public RoomController lounge;
 
-
-
+    public CameraController cam;
 
     void Start()
     {
-        
+        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
     }
 
     
@@ -51,14 +50,16 @@ public class GameManager : MonoBehaviour
     {
         if (kitchen.CheckActive() == true)
         {
-            print("kitchenactive");
+            print("kitchen is active");
             activeRoom = Room.KITCHEN;
-
+            cam.CamToKitchen();
         }
+
         if (lounge.CheckActive() == true) 
         {
             print("lounge is active");
             activeRoom = Room.LOUNGE;
+            cam.CamToLounge();
         }
 
 

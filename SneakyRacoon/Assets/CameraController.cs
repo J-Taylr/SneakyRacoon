@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-   
+    public float camSpeed;
 
     [Header("Camera Positions")]
     public GameObject KitchenCam;
@@ -18,21 +18,21 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        MoveCamera();
+        
     }
 
-    public void MoveCamera()
+   
+
+    public void CamToKitchen()
     {
-        switch (activeRoom) // when room is active, move camera to active rooms 'cam' game object
-        {
-            case GameManager.Room.KITCHEN:
-                Camera.main.transform.position = KitchenCam.transform.position;
-                break;
-            case GameManager.Room.LOUNGE:
-                print("cam to lounge");
-                Camera.main.transform.position = LoungeCam.transform.position;
-                break;
-        }
+        print("camtokitchen");
+        Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, KitchenCam.transform.position, camSpeed * Time.deltaTime);
+    }
+
+    public void CamToLounge()
+    {
+        print("camtolounge");
+        Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, LoungeCam.transform.position, camSpeed * Time.deltaTime);
     }
 
 
