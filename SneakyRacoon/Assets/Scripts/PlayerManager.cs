@@ -4,23 +4,30 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-   
-    
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        print("collision");
-        if (collision.gameObject.CompareTag("Food")) // if player collides with food
-        {
-            GameManager.Instance.ResetHunger();
-            GameManager.Instance.playerScore++;
-            Destroy(collision.gameObject);
-        }
-        
+    public GameObject sprite;
+    MouseMovement playerMover;
 
+    private void Start()
+    {
         
+        playerMover = GetComponent<MouseMovement>();
+    }
+
+    public void LowerSpeed()
+    {
+        playerMover.LowerSpeed();
+    }
+    
+    public void FatRaccoon()
+    {
+       transform.localScale += new Vector3(0.1f, 0, 0);
     }
 
 
+
+
+   
+   
 
   
 }

@@ -41,6 +41,21 @@ public class MouseMovement : MonoBehaviour
         //transform.position = Vector2.Lerp(transform.position, Camera.main.ScreenToWorldPoint(target), speed * Time.deltaTime);
     }
 
+    public void LowerSpeed()
+    {
+        print("speed check");
+        if (speed > 1f)
+        {
+            speed = speed - .5f;
+        }
+        else if (speed > 0.1f)
+        {
+            speed = speed - 0.1f;
+        }
+
+
+    }
+
     public void RotatePlayer()
     {
         Vector3 mousePos = Input.mousePosition;

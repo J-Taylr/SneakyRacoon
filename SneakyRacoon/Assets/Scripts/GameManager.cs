@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         //CheckRooms();
         HungerTimer();
-
+        FoodSpawner();
         hungerSlider.value = timeRemaining;
     }
 
@@ -107,10 +107,10 @@ public class GameManager : MonoBehaviour
     {
         if (foodSpawned.Count < 10)
         {
-            GameObject roomToSpawn = roomsinHouse[Random.Range(0, (roomsinHouse.Length - 1))];
+            GameObject roomToSpawn = roomsinHouse[Random.Range(0, roomsinHouse.Length)];
+            GameObject foodToSpawn = foodPrefabs[Random.Range(0, foodPrefabs.Count)];
 
-            
-
+            roomToSpawn.GetComponent<RoomController>().SpawnFood(foodToSpawn);
 
         
         }
