@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
 
     public int playerScore = 0;
+    public bool PlayerisHidden = false;
     public float timeRemaining = 60;
     public Slider hungerSlider;
     
@@ -69,8 +70,6 @@ public class GameManager : MonoBehaviour
             activeRoom = Room.LOUNGE;
             cam.CamToLounge();
         }
-
-
 
     }
 
