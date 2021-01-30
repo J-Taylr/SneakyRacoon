@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
         print("collision");
         if (collision.gameObject.CompareTag("Food"))
         {
+            GameManager.Instance.ResetHunger();
             GameManager.Instance.playerScore++;
             Destroy(collision.gameObject);
         }

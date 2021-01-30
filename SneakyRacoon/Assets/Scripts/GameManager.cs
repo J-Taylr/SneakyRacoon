@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,7 +27,11 @@ public class GameManager : MonoBehaviour
 
 
     public int playerScore = 0;
-     public enum Room {KITCHEN,LOUNGE,BEDROOM,TOILET}
+    public float timeRemaining = 60;
+    public Slider hungerSlider;
+    
+    
+    public enum Room {KITCHEN,LOUNGE,BEDROOM,TOILET}
      Room activeRoom;
 
     [Header("Rooms")]
@@ -44,6 +49,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CheckRooms();
+        HungerTimer();
+
+        hungerSlider.value = timeRemaining;
     }
 
     public void CheckRooms()
@@ -66,6 +74,29 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void ResetHunger()
+    {
+        timeRemaining = 60;
+    }
   
+    public void HungerTimer()
+    {
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+            
+        }
+        else
+        {
+            timeRemaining = 0;
+        }
+
+
+    }
+
+
+
+
+
 
 }
