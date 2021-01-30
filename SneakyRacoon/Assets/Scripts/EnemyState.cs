@@ -8,6 +8,7 @@ public class EnemyState : MonoBehaviour
     public int state;
     public Transform player;
     public AIDestinationSetter destination;
+    public AIPath speedControl;
 
     public Transform[] patrolNodes;
     public Transform node;
@@ -21,9 +22,11 @@ public class EnemyState : MonoBehaviour
 
     void Update() 
     {
+        print(state);
         //RaycastHit2D hit =
         if (state == 0)//patroling
         {
+            speedControl.maxSpeed = 6;
             destination.target = node;
             if (Vector3.Distance(node.position, transform.position) <= 1f)
             {
@@ -32,6 +35,7 @@ public class EnemyState : MonoBehaviour
         }
         else if (state == 1)//chaseing
         {
+            speedControl.maxSpeed = 10;
             destination.target = player;
         }
     }
@@ -44,7 +48,7 @@ public class EnemyState : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D detect) {
-        if (detect.tag == "Player")
+        if (detect.tag == "Player" && GameManager.Instance.PlayerisHidden == false)
         {
             state = 1;
         }
