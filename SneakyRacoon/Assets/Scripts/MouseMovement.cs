@@ -10,9 +10,16 @@ public class MouseMovement : MonoBehaviour
     public int score;
     public float scoref;
 
+    public GameObject DeathUI;
+    public bool dead;
+
     private Vector3 target; //mouse position
 
     private Rigidbody2D rb2D;
+
+
+    public GameObject pauseMenu;
+    public bool paused;
   
     void Start()
     {
@@ -22,14 +29,44 @@ public class MouseMovement : MonoBehaviour
   
     void Update()
     {
-        if (Input.GetMouseButton(0))
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            MovePlayer();
+            if (paused)
+            {
+                UnPause();
+            }
+            else
+            {
+                Pause();
+            }
         }
-        scoref = (float)score;
-        rb2D.drag = 1 - scoref/ 20;
-        //MovePlayer();
-        RotatePlayer();
+
+        if (dead)
+        {
+            DeathUI.SetActive(true);
+        }
+        else
+        {        
+            if (Input.GetMouseButton(0))
+            {
+                MovePlayer();
+            }
+            scoref = (float)score;
+            rb2D.drag = 1 - scoref/ 20;
+            RotatePlayer();
+        }
+    }
+
+    public void Pause() {
+        paused = true;
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void UnPause() {
+        paused = false;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 
 
