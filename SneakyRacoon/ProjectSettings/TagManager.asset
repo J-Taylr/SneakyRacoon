@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Food
   - Hiding
+  - Room
+  - Wall
   layers:
   - Default
   - TransparentFX

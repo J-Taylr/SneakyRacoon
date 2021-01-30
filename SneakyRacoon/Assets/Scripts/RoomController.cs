@@ -44,7 +44,7 @@ public class RoomController : MonoBehaviour
     {
         
             GameObject go = Instantiate(prefab, RandomSpawnPos(), Quaternion.identity);
-            FoodinRoom.Add(go);
+        GameManager.Instance.foodSpawned.Add(go);
     }
 
 
