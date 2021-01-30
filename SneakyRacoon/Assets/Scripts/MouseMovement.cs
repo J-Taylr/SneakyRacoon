@@ -9,26 +9,33 @@ public class MouseMovement : MonoBehaviour
     public float rotationOffset;
 
     private Vector3 target; //mouse position
+
+    private Rigidbody2D rb2D;
   
     void Start()
     {
-        
+        rb2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
   
     void Update()
     {
+        if (Input.GetMouseButton(0))
+        {
+            MovePlayer();
+        }
      
-        MovePlayer();
+        //MovePlayer();
         RotatePlayer();
     }
 
 
     public void MovePlayer()
     {
+        rb2D.AddForce(transform.up * speed);
         target = Input.mousePosition;
         target.z = 20;
-        transform.position = Vector2.Lerp(transform.position, Camera.main.ScreenToWorldPoint(target), speed * Time.deltaTime);
+        //transform.position = Vector2.Lerp(transform.position, Camera.main.ScreenToWorldPoint(target), speed * Time.deltaTime);
     }
 
     public void RotatePlayer()
