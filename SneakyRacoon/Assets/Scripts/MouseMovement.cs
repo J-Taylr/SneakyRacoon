@@ -7,6 +7,8 @@ public class MouseMovement : MonoBehaviour
 
     public float speed;
     public float rotationOffset;
+    public int score;
+    public float scoref;
 
     private Vector3 target; //mouse position
 
@@ -24,7 +26,8 @@ public class MouseMovement : MonoBehaviour
         {
             MovePlayer();
         }
-     
+        scoref = (float)score;
+        rb2D.drag = 1 - scoref/ 20;
         //MovePlayer();
         RotatePlayer();
     }
