@@ -5,9 +5,10 @@ using UnityEngine;
 public class HidingSpot : MonoBehaviour
 {
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+   
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("Player")) // if player is under a table
         {
             print("collidah");
@@ -18,7 +19,6 @@ public class HidingSpot : MonoBehaviour
             GameManager.Instance.PlayerisHidden = true;
         }
     }
-
 
     public void HideOn()
     {
