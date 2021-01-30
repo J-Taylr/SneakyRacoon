@@ -36,17 +36,15 @@ public class RoomController : MonoBehaviour
     {
 
 
-        SpawnFood();
+        
         //CheckActive();
     }
 
-    public void SpawnFood()
+    public void SpawnFood(GameObject prefab)
     {
-        if (FoodinRoom.Count < Max)
-        {
+        
             GameObject go = Instantiate(prefab, RandomSpawnPos(), Quaternion.identity);
             FoodinRoom.Add(go);
-        }
     }
 
 

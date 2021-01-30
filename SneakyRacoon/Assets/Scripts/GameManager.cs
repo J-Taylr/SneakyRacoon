@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         }
 
        
+
     }
 
     //start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//start script here//st
@@ -41,8 +42,16 @@ public class GameManager : MonoBehaviour
 
     public CameraController cam;
 
+
+    public GameObject[] roomsinHouse;
+
+    public List<GameObject> foodSpawned = new List<GameObject>();
+
+    public List<GameObject> foodPrefabs = new List<GameObject>();
+
     void Start()
     {
+        roomsinHouse = GameObject.FindGameObjectsWithTag("Room");
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
     }
 
@@ -94,7 +103,18 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public void FoodSpawner()
+    {
+        if (foodSpawned.Count < 10)
+        {
+            GameObject roomToSpawn = roomsinHouse[Random.Range(0, (roomsinHouse.Length - 1))];
 
+            
+
+
+        
+        }
+    }
 
 
 
