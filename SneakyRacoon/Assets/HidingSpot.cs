@@ -11,22 +11,33 @@ public class HidingSpot : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) // if player is under a table
         {
-            print("collidah");
+            
             Color tablecolor = gameObject.GetComponent<SpriteRenderer>().color;
-            tablecolor.a = 0.5f;
-            gameObject.GetComponent<SpriteRenderer>().color = tablecolor; //these lines change the alpha level of the table when the player is under it 
+            tablecolor.a = 0.7f;
+            gameObject.GetComponent<SpriteRenderer>().color = tablecolor; //these lines change the alpha level of the hiding spot when the player is under it 
 
             GameManager.Instance.PlayerisHidden = true;
         }
+        if (collision.gameObject.CompareTag("Food"))
+        {
+            Destroy(collision.gameObject);
+        }
+
+
+
+
     }
 
-    public void HideOn()
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
-         
-        Color tablecolor = gameObject.GetComponent<SpriteRenderer>().color;
-        tablecolor.a = 0.5f;
-        gameObject.GetComponent<SpriteRenderer>().color = tablecolor; //these lines change the alpha level of the table when the player is under it
-    }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Color tablecolor = gameObject.GetComponent<SpriteRenderer>().color;
+            tablecolor.a = 1f;
+            gameObject.GetComponent<SpriteRenderer>().color = tablecolor; //these lines change the alpha level of the hiding spot when the player has left it 
 
+            GameManager.Instance.PlayerisHidden = false;
+        }
+    }
 }
