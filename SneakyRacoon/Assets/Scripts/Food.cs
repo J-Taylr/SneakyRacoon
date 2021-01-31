@@ -25,8 +25,7 @@ public class Food : MonoBehaviour
             collision.GetComponent<MouseMovement>().score++;
             GameManager.Instance.ResetHunger();
             GameManager.Instance.foodSpawned.Remove(this.gameObject);
-            player.LowerSpeed();
-            player.FatRaccoon();
+            player.EatFood();           
             Destroy(gameObject);
         }
 
