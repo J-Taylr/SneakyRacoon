@@ -23,7 +23,8 @@ public class UIPopup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PopUp.SetActive(true);
+        Lines.text = " I can already smell the heavenly feast awaiting me inside this abode. If I am to enjoy such luxuries I must be careful not to alert the noble residents of this house.";
     }
 
     // Update is called once per frame
