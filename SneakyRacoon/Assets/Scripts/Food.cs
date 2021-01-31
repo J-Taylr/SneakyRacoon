@@ -5,11 +5,12 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     PlayerManager player;
-
+    UIPopup Pop;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+        Pop = GameObject.FindGameObjectWithTag("Call")
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class Food : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Food")) //stops from spawning on another food object
         {
+            UIPopup.
             GameManager.Instance.foodSpawned.Remove(this.gameObject);
             Destroy(gameObject);
         }

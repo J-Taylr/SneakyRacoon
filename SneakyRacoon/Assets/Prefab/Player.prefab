@@ -112,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6188206952921991328}
   - component: {fileID: 616777353}
+  - component: {fileID: 2737745682376454970}
   - component: {fileID: 616777351}
   - component: {fileID: 616777349}
   - component: {fileID: 616777352}
@@ -158,6 +159,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2737745682376454970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617073048349734167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad64ad8256841a47ab16e1db39d1fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5522838292628889230, guid: 99744faddcc9eed418aa6359bb82607f, type: 3}
+  HasHit: 0
 --- !u!70 &616777351
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -190,6 +205,10 @@ MonoBehaviour:
   rotationOffset: 0
   score: 0
   scoref: 0
+  DeathUI: {fileID: 0}
+  dead: 0
+  pauseMenu: {fileID: 0}
+  paused: 0
 --- !u!114 &616777352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +221,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbc05a8d044afc49947c89a21b22308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}

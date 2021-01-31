@@ -1,0 +1,43 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UIPopup : MonoBehaviour
+{
+    public GameObject PopUp;
+    public Text Lines;
+    public string[] RacoonQoutes =
+    {
+        "What an exquisite delicacy!",
+        "Mmmmm, I haven’t been able to enjoy something so delicious in months.",
+        "I say, this food is absolutely superb.",
+        "I truly am feasting like royalty tonight",
+        "Mayhaps I shall return here one day, their selection of foodstuffs is simply divine.",
+        "My stomach is jumping with joy at this mouth-watering morsel.",
+        "Such a scrumptious meal!",
+        "This food is simply delectable.",
+    };
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    void StartChat()
+    {
+        StartCoroutine("Chat");
+    }
+    IEnumerator Chat()
+    {
+        PopUp.SetActive(true);
+        Lines.text = RacoonQoutes[Random.Range(0, RacoonQoutes.Length)];
+        yield return new WaitForSeconds(2);
+        PopUp.SetActive(true);
+    }
+}
