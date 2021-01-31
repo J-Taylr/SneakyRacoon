@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 27586354}
   m_Layer: 0
   m_Name: KITCHEN_COUNTER
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 87092699}
   m_Layer: 0
   m_Name: DIRTY_plate 1 (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 180975390}
   m_Layer: 0
   m_Name: TV
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 186591306}
   m_Layer: 0
   m_Name: lamp (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,7 +1991,7 @@ GameObject:
   - component: {fileID: 265435231}
   m_Layer: 0
   m_Name: BATHTUB
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2375,7 +2375,7 @@ GameObject:
   - component: {fileID: 296860760}
   m_Layer: 0
   m_Name: lamp (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2463,7 +2463,7 @@ GameObject:
   - component: {fileID: 320544878}
   m_Layer: 0
   m_Name: fridge 1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3161,7 +3161,7 @@ GameObject:
   - component: {fileID: 455367350}
   m_Layer: 0
   m_Name: WELCOME_MAT (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3732,7 +3732,7 @@ GameObject:
   - component: {fileID: 526723057}
   m_Layer: 0
   m_Name: STOVE
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4142,7 +4142,7 @@ GameObject:
   - component: {fileID: 547419148}
   m_Layer: 0
   m_Name: RUG (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4418,7 +4418,7 @@ GameObject:
   - component: {fileID: 590637338}
   m_Layer: 0
   m_Name: outside_bin 1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4516,7 +4516,7 @@ GameObject:
   - component: {fileID: 607836899}
   m_Layer: 0
   m_Name: DESKS
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4704,7 +4704,7 @@ GameObject:
   - component: {fileID: 629743777}
   m_Layer: 0
   m_Name: plate
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4966,7 +4966,7 @@ GameObject:
   - component: {fileID: 671424629}
   m_Layer: 0
   m_Name: outside_bin 1 (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5144,7 +5144,7 @@ GameObject:
   - component: {fileID: 702725855}
   m_Layer: 0
   m_Name: RUG
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5545,7 +5545,7 @@ GameObject:
   - component: {fileID: 762700730}
   m_Layer: 0
   m_Name: WELCOME_MAT
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5701,7 +5701,7 @@ GameObject:
   - component: {fileID: 779454528}
   m_Layer: 0
   m_Name: plant 1 (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6075,7 +6075,7 @@ GameObject:
   - component: {fileID: 789869401}
   m_Layer: 0
   m_Name: DIRTY_plate 1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6156,7 +6156,7 @@ GameObject:
   - component: {fileID: 796061534}
   m_Layer: 0
   m_Name: SINK
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6238,7 +6238,7 @@ GameObject:
   - component: {fileID: 810136798}
   m_Layer: 0
   m_Name: SINK (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6751,7 +6751,7 @@ GameObject:
   - component: {fileID: 901629955}
   m_Layer: 0
   m_Name: TOILET
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6990,7 +6990,7 @@ GameObject:
   - component: {fileID: 913060017}
   m_Layer: 0
   m_Name: FRONT_AND_BACK_DOOR (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7142,7 +7142,7 @@ GameObject:
   - component: {fileID: 917532022}
   m_Layer: 0
   m_Name: RUG (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7223,7 +7223,7 @@ GameObject:
   - component: {fileID: 953094960}
   m_Layer: 0
   m_Name: BEDSIDE_TABLE (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7304,7 +7304,7 @@ GameObject:
   - component: {fileID: 955046601}
   m_Layer: 0
   m_Name: lamp
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7818,7 +7818,7 @@ GameObject:
   - component: {fileID: 996676633}
   m_Layer: 0
   m_Name: plant 1 (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8003,7 +8003,7 @@ GameObject:
   - component: {fileID: 1028806800}
   m_Layer: 0
   m_Name: TV (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8193,7 +8193,7 @@ GameObject:
   - component: {fileID: 1053146030}
   m_Layer: 0
   m_Name: DESKS (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8777,7 +8777,7 @@ GameObject:
   - component: {fileID: 1133590121}
   m_Layer: 0
   m_Name: DIRTY_plate 1 (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9246,7 +9246,7 @@ GameObject:
   - component: {fileID: 1169633925}
   m_Layer: 0
   m_Name: TV (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9328,7 +9328,7 @@ GameObject:
   - component: {fileID: 1172187742}
   m_Layer: 0
   m_Name: SOFA (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9541,7 +9541,7 @@ GameObject:
   - component: {fileID: 1215623612}
   m_Layer: 0
   m_Name: DIRTY_plate 1 (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9838,7 +9838,7 @@ GameObject:
   - component: {fileID: 1307964557}
   m_Layer: 0
   m_Name: plant 1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9946,7 +9946,7 @@ GameObject:
   - component: {fileID: 1316068064}
   m_Layer: 0
   m_Name: plant 1 (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10053,7 +10053,7 @@ GameObject:
   - component: {fileID: 1328575173}
   m_Layer: 0
   m_Name: lamp (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10134,7 +10134,7 @@ GameObject:
   - component: {fileID: 1340503156}
   m_Layer: 0
   m_Name: WELCOME_MAT (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10718,7 +10718,7 @@ GameObject:
   - component: {fileID: 1425405035}
   m_Layer: 0
   m_Name: BEDSIDE_TABLE (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11535,7 +11535,7 @@ GameObject:
   - component: {fileID: 1555496602}
   m_Layer: 0
   m_Name: STUDY_CHAIR
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11708,7 +11708,7 @@ GameObject:
   - component: {fileID: 1562295746}
   m_Layer: 0
   m_Name: DIRTY_plate 1 (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12276,7 +12276,7 @@ GameObject:
   - component: {fileID: 1620264381}
   m_Layer: 0
   m_Name: lamp (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12601,7 +12601,7 @@ GameObject:
   - component: {fileID: 1717764317}
   m_Layer: 0
   m_Name: BEDSIDE_TABLE (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13690,7 +13690,7 @@ GameObject:
   - component: {fileID: 1860981341}
   m_Layer: 0
   m_Name: FRONT_AND_BACK_DOOR
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13821,7 +13821,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -13842,7 +13842,7 @@ GameObject:
   - component: {fileID: 1867129166}
   m_Layer: 0
   m_Name: BEDSIDE_TABLE (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14336,7 +14336,7 @@ GameObject:
   - component: {fileID: 1908564762}
   m_Layer: 0
   m_Name: DESKS (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14694,7 +14694,7 @@ GameObject:
   - component: {fileID: 1963189061}
   m_Layer: 0
   m_Name: plant 1 (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14876,7 +14876,7 @@ GameObject:
   - component: {fileID: 1966566519}
   m_Layer: 0
   m_Name: KITCHEN_COUNTER (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15173,7 +15173,7 @@ GameObject:
   - component: {fileID: 1992547633}
   m_Layer: 0
   m_Name: STUDY_CHAIR (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15318,7 +15318,7 @@ GameObject:
   - component: {fileID: 2002705471}
   m_Layer: 0
   m_Name: BEDROOM_BINS 1 (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15593,7 +15593,7 @@ GameObject:
   - component: {fileID: 2031970631}
   m_Layer: 0
   m_Name: FRONT_AND_BACK_DOOR (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15622,12 +15622,12 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 117710550}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -3.98}
-  m_ConnectedAnchor: {x: 2.589883, y: -10.606099}
+  m_Anchor: {x: 0, y: -3.9}
+  m_ConnectedAnchor: {x: 23.559988, y: 15.9115305}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -15648,7 +15648,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -16222,7 +16222,7 @@ GameObject:
   - component: {fileID: 2119874092}
   m_Layer: 0
   m_Name: BEDROOM_BINS 1
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17276,6 +17276,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1.6697266
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953916255606713139, guid: ecc7427fc1c272a449753cad353a5540,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -2.906291
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953916255606713139, guid: ecc7427fc1c272a449753cad353a5540,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 13.580576
       objectReference: {fileID: 0}
     - target: {fileID: 8953916255606713142, guid: ecc7427fc1c272a449753cad353a5540,
         type: 3}

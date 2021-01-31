@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1179148844966022282}
   - component: {fileID: 7909299305319509832}
   - component: {fileID: 5333548920564963218}
+  - component: {fileID: 3382359738448043551}
   m_Layer: 0
   m_Name: Bam
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ad82a41ff1736844a8e1c917491781d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,3 +95,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62912c1fca1234d418cbe4aac198448f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3382359738448043551
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5522838292628889230}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cdc52fe95d3af16408933b7b76df30c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -48,5 +48,11 @@ public class Food : MonoBehaviour
             GameManager.Instance.foodSpawned.Remove(this.gameObject);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Prop")) //stops from spawning in on props with colliders
+        {
+            GameManager.Instance.foodSpawned.Remove(this.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

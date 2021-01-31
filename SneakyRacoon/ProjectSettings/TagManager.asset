@@ -9,6 +9,7 @@ TagManager:
   - Room
   - Wall
   - Call
+  - Prop
   layers:
   - Default
   - TransparentFX
