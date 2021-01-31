@@ -8,6 +8,8 @@ public class UIPopup : MonoBehaviour
     public bool eating = false;
     public GameObject PopUp;
     public Text Lines;
+    
+
     public string[] RacoonQoutes =
         
     {
@@ -50,4 +52,7 @@ public class UIPopup : MonoBehaviour
         eating = false;
         PopUp.SetActive(false);
     }
+
+
+    
 }

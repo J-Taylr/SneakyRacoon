@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
     public bool PlayerisHidden = false;
     public float timeRemaining = 60;
     public Slider hungerSlider;
-    
+    public Slider volumeSlider;
+    public float volume;
     
     public enum Room {KITCHEN,LOUNGE,BEDROOM,TOILET}
      Room activeRoom;
@@ -62,6 +63,10 @@ public class GameManager : MonoBehaviour
         HungerTimer();
         FoodSpawner();
         hungerSlider.value = timeRemaining;
+
+        PlayerPrefs.GetFloat("volume");
+        PlayerPrefs.SetFloat("volume", volumeSlider.value);
+
     }
 
    /* public void CheckRooms()
