@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseMovement : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class MouseMovement : MonoBehaviour
     public float rotationOffset;
     public int score;
     public float scoref;
+    public Text deathScore;
 
     public GameObject DeathUI;
     public bool dead;
@@ -31,7 +33,6 @@ public class MouseMovement : MonoBehaviour
   
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (paused)
@@ -48,6 +49,7 @@ public class MouseMovement : MonoBehaviour
         {
             DeathUI.SetActive(true);
             Time.timeScale = 0;
+            deathScore.text = "You ate " + score.ToString() + " pieces of food.";
         }
         else
         {        
