@@ -24,6 +24,8 @@ public class MouseMovement : MonoBehaviour
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
+        Time.timeScale = 1;
+        dead = false;
     }
 
   
@@ -45,6 +47,7 @@ public class MouseMovement : MonoBehaviour
         if (dead)
         {
             DeathUI.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {        
