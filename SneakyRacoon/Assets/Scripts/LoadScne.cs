@@ -16,8 +16,8 @@ public class LoadScne : MonoBehaviour
     {
         
     }
-    public void ChangeScene(string SampleScene)
+    public void ChangeScene()
     {
-        SceneManager.LoadScene(SampleScene);
+        SceneManager.LoadScene("Intro");
     }
 }
