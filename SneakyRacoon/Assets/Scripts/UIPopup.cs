@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class UIPopup : MonoBehaviour
 {
+    public bool eating = false;
     public GameObject PopUp;
     public Text Lines;
     public string[] RacoonQoutes =
+        
     {
         "What an exquisite delicacy!",
         "Mmmmm, I haven’t been able to enjoy something so delicious in months.",
@@ -29,15 +31,22 @@ public class UIPopup : MonoBehaviour
     {
         
     }
-    void StartChat()
+    public void StartChat()
     {
-        StartCoroutine("Chat");
+        print("TheFunctionWorked");
+        if (eating == false)
+        {
+            StartCoroutine("Chat");
+        }
     }
     IEnumerator Chat()
     {
+        eating = true;
         PopUp.SetActive(true);
         Lines.text = RacoonQoutes[Random.Range(0, RacoonQoutes.Length)];
-        yield return new WaitForSeconds(2);
-        PopUp.SetActive(true);
+        yield return new WaitForSeconds(5);
+        Lines.text = "";
+        eating = false;
+        PopUp.SetActive(false);
     }
 }

@@ -10,7 +10,7 @@ public class Food : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
-        Pop = GameObject.FindGameObjectWithTag("Call")
+        Pop = GameObject.FindGameObjectWithTag("Call").GetComponent<UIPopup>();
     }
 
     // Update is called once per frame
@@ -22,17 +22,17 @@ public class Food : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Player")
         {
-            print("Howdy");
             collision.GetComponent<MouseMovement>().score++;
             GameManager.Instance.ResetHunger();
             GameManager.Instance.foodSpawned.Remove(this.gameObject);
             player.EatFood();           
             Destroy(gameObject);
+            print("Howdy");
+            Pop.StartChat();
         }
 
         if (collision.gameObject.CompareTag("Food")) //stops from spawning on another food object
         {
-            UIPopup.
             GameManager.Instance.foodSpawned.Remove(this.gameObject);
             Destroy(gameObject);
         }
